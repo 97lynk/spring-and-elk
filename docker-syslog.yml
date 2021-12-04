@@ -1,0 +1,11 @@
+version: '3.6'
+
+services:
+  syslog:
+    image: balabit/syslog-ng:latest
+    container_name: syslog
+    entrypoint: /usr/sbin/syslog-ng
+    command: "-F -edv"
+    ports:
+      - 514:514
+      - 601:601

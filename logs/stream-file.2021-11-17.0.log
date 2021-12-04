@@ -1,0 +1,251 @@
+[2021-11-17 01:04:46.354] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStarting:55 - Starting SpringAppApplication using Java 1.8.0_144 on TuanDesktop with PID 25548 (D:\docker\elk\spring-app\target\classes started by anhtu in D:\docker\elk\spring-app)
+[2021-11-17 01:04:46.361] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStartupProfileInfo:663 - The following profiles are active: docker
+[2021-11-17 01:04:47.284] [TuanDesktop] [main] INFO o.s.b.w.e.tomcat.TomcatWebServer@initialize:108 - Tomcat initialized with port(s): 8081 (http)
+[2021-11-17 01:04:47.297] [TuanDesktop] [main] INFO o.a.catalina.core.StandardService@log:173 - Starting service [Tomcat]
+[2021-11-17 01:04:47.298] [TuanDesktop] [main] INFO o.a.catalina.core.StandardEngine@log:173 - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2021-11-17 01:04:47.395] [TuanDesktop] [main] INFO o.a.c.c.C.[Tomcat].[localhost].[/]@log:173 - Initializing Spring embedded WebApplicationContext
+[2021-11-17 01:04:47.396] [TuanDesktop] [main] INFO o.s.b.w.s.c.ServletWebServerApplicationContext@prepareWebApplicationContext:290 - Root WebApplicationContext: initialization completed in 975 ms
+[2021-11-17 01:04:47.756] [TuanDesktop] [main] INFO o.s.b.w.e.tomcat.TomcatWebServer@start:220 - Tomcat started on port(s): 8081 (http) with context path ''
+[2021-11-17 01:04:47.769] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStarted:61 - Started SpringAppApplication in 1.794 seconds (JVM running for 3.033)
+[2021-11-17 01:06:17.544] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStarting:55 - Starting SpringAppApplication using Java 1.8.0_144 on TuanDesktop with PID 12056 (D:\docker\elk\spring-app\target\classes started by anhtu in D:\docker\elk\spring-app)
+[2021-11-17 01:06:17.549] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStartupProfileInfo:663 - The following profiles are active: docker
+[2021-11-17 01:06:18.421] [TuanDesktop] [main] INFO o.s.b.w.e.tomcat.TomcatWebServer@initialize:108 - Tomcat initialized with port(s): 8081 (http)
+[2021-11-17 01:06:18.432] [TuanDesktop] [main] INFO o.a.catalina.core.StandardService@log:173 - Starting service [Tomcat]
+[2021-11-17 01:06:18.433] [TuanDesktop] [main] INFO o.a.catalina.core.StandardEngine@log:173 - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2021-11-17 01:06:18.514] [TuanDesktop] [main] INFO o.a.c.c.C.[Tomcat].[localhost].[/]@log:173 - Initializing Spring embedded WebApplicationContext
+[2021-11-17 01:06:18.515] [TuanDesktop] [main] INFO o.s.b.w.s.c.ServletWebServerApplicationContext@prepareWebApplicationContext:290 - Root WebApplicationContext: initialization completed in 917 ms
+[2021-11-17 01:06:18.870] [TuanDesktop] [main] INFO o.s.b.w.e.tomcat.TomcatWebServer@start:220 - Tomcat started on port(s): 8081 (http) with context path ''
+[2021-11-17 01:06:18.882] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStarted:61 - Started SpringAppApplication in 1.688 seconds (JVM running for 3.03)
+[2021-11-17 01:06:30.204] [TuanDesktop] [http-nio-8081-exec-1] INFO o.a.c.c.C.[Tomcat].[localhost].[/]@log:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-11-17 01:06:30.206] [TuanDesktop] [http-nio-8081-exec-1] INFO o.s.web.servlet.DispatcherServlet@initServletBean:525 - Initializing Servlet 'dispatcherServlet'
+[2021-11-17 01:06:30.207] [TuanDesktop] [http-nio-8081-exec-1] INFO o.s.web.servlet.DispatcherServlet@initServletBean:547 - Completed initialization in 1 ms
+[2021-11-17 01:06:30.236] [TuanDesktop] [http-nio-8081-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet]@log:175 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ArithmeticException: / by zero] with root cause
+java.lang.ArithmeticException: / by zero
+	at io.a97lynk.springapp.SpringAppApplication.exception(SpringAppApplication.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[2021-11-17 01:07:22.103] [TuanDesktop] [http-nio-8081-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet]@log:175 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ArithmeticException: / by zero] with root cause
+java.lang.ArithmeticException: / by zero
+	at io.a97lynk.springapp.SpringAppApplication.exception(SpringAppApplication.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[2021-11-17 01:10:54.299] [TuanDesktop] [http-nio-8081-exec-4] INFO i.a.springapp.SpringAppApplication@home:21 - Wed Nov 17 01:10:54 ICT 2021
+[2021-11-17 01:11:39.049] [TuanDesktop] [http-nio-8081-exec-5] INFO i.a.springapp.SpringAppApplication@home:21 - Wed Nov 17 01:11:39 ICT 2021
+[2021-11-17 01:21:29.195] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStarting:55 - Starting SpringAppApplication using Java 1.8.0_144 on TuanDesktop with PID 6356 (D:\docker\elk\spring-app\target\classes started by anhtu in D:\docker\elk\spring-app)
+[2021-11-17 01:21:29.214] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStartupProfileInfo:663 - The following profiles are active: docker
+[2021-11-17 01:21:30.030] [TuanDesktop] [main] INFO o.s.b.w.e.tomcat.TomcatWebServer@initialize:108 - Tomcat initialized with port(s): 8081 (http)
+[2021-11-17 01:21:30.052] [TuanDesktop] [main] INFO o.a.catalina.core.StandardService@log:173 - Starting service [Tomcat]
+[2021-11-17 01:21:30.053] [TuanDesktop] [main] INFO o.a.catalina.core.StandardEngine@log:173 - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2021-11-17 01:21:30.123] [TuanDesktop] [main] INFO o.a.c.c.C.[Tomcat].[localhost].[/]@log:173 - Initializing Spring embedded WebApplicationContext
+[2021-11-17 01:21:30.126] [TuanDesktop] [main] INFO o.s.b.w.s.c.ServletWebServerApplicationContext@prepareWebApplicationContext:290 - Root WebApplicationContext: initialization completed in 869 ms
+[2021-11-17 01:21:30.471] [TuanDesktop] [main] INFO o.s.b.w.e.tomcat.TomcatWebServer@start:220 - Tomcat started on port(s): 8081 (http) with context path ''
+[2021-11-17 01:21:30.485] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStarted:61 - Started SpringAppApplication in 1.624 seconds (JVM running for 2.863)
+[2021-11-17 01:21:36.126] [TuanDesktop] [http-nio-8081-exec-1] INFO o.a.c.c.C.[Tomcat].[localhost].[/]@log:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-11-17 01:21:36.126] [TuanDesktop] [http-nio-8081-exec-1] INFO o.s.web.servlet.DispatcherServlet@initServletBean:525 - Initializing Servlet 'dispatcherServlet'
+[2021-11-17 01:21:36.127] [TuanDesktop] [http-nio-8081-exec-1] INFO o.s.web.servlet.DispatcherServlet@initServletBean:547 - Completed initialization in 0 ms
+[2021-11-17 01:21:36.156] [TuanDesktop] [http-nio-8081-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet]@log:175 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ArithmeticException: / by zero] with root cause
+
+java.lang.ArithmeticException: / by zero
+	at io.a97lynk.springapp.SpringAppApplication.exception(SpringAppApplication.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+[2021-11-17 01:23:05.621] [TuanDesktop] [http-nio-8081-exec-3] INFO i.a.springapp.SpringAppApplication@home:21 - Wed Nov 17 01:23:05 ICT 2021
+[2021-11-17 01:27:04.038] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStarting:55 - Starting SpringAppApplication using Java 1.8.0_144 on TuanDesktop with PID 10640 (D:\docker\elk\spring-app\target\classes started by anhtu in D:\docker\elk\spring-app)
+[2021-11-17 01:27:04.051] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStartupProfileInfo:663 - The following profiles are active: docker
+[2021-11-17 01:27:04.826] [TuanDesktop] [main] INFO o.s.b.w.e.tomcat.TomcatWebServer@initialize:108 - Tomcat initialized with port(s): 8081 (http)
+[2021-11-17 01:27:04.831] [TuanDesktop] [main] INFO o.a.catalina.core.StandardService@log:173 - Starting service [Tomcat]
+[2021-11-17 01:27:04.839] [TuanDesktop] [main] INFO o.a.catalina.core.StandardEngine@log:173 - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2021-11-17 01:27:04.921] [TuanDesktop] [main] INFO o.a.c.c.C.[Tomcat].[localhost].[/]@log:173 - Initializing Spring embedded WebApplicationContext
+[2021-11-17 01:27:04.923] [TuanDesktop] [main] INFO o.s.b.w.s.c.ServletWebServerApplicationContext@prepareWebApplicationContext:290 - Root WebApplicationContext: initialization completed in 823 ms
+[2021-11-17 01:27:05.268] [TuanDesktop] [main] INFO o.s.b.w.e.tomcat.TomcatWebServer@start:220 - Tomcat started on port(s): 8081 (http) with context path ''
+[2021-11-17 01:27:05.287] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStarted:61 - Started SpringAppApplication in 1.577 seconds (JVM running for 2.748)
+[2021-11-17 01:28:09.884] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStarting:55 - Starting SpringAppApplication using Java 1.8.0_144 on TuanDesktop with PID 656 (D:\docker\elk\spring-app\target\classes started by anhtu in D:\docker\elk\spring-app)
+[2021-11-17 01:28:09.905] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStartupProfileInfo:663 - The following profiles are active: docker
+[2021-11-17 01:28:10.754] [TuanDesktop] [main] INFO o.s.b.w.e.tomcat.TomcatWebServer@initialize:108 - Tomcat initialized with port(s): 8081 (http)
+[2021-11-17 01:28:10.764] [TuanDesktop] [main] INFO o.a.catalina.core.StandardService@log:173 - Starting service [Tomcat]
+[2021-11-17 01:28:10.765] [TuanDesktop] [main] INFO o.a.catalina.core.StandardEngine@log:173 - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2021-11-17 01:28:10.834] [TuanDesktop] [main] INFO o.a.c.c.C.[Tomcat].[localhost].[/]@log:173 - Initializing Spring embedded WebApplicationContext
+[2021-11-17 01:28:10.839] [TuanDesktop] [main] INFO o.s.b.w.s.c.ServletWebServerApplicationContext@prepareWebApplicationContext:290 - Root WebApplicationContext: initialization completed in 876 ms
+[2021-11-17 01:28:11.174] [TuanDesktop] [main] INFO o.s.b.w.e.tomcat.TomcatWebServer@start:220 - Tomcat started on port(s): 8081 (http) with context path ''
+[2021-11-17 01:28:11.188] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStarted:61 - Started SpringAppApplication in 1.658 seconds (JVM running for 2.808)
+[2021-11-17 01:29:22.971] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStarting:55 - Starting SpringAppApplication using Java 1.8.0_144 on TuanDesktop with PID 3588 (D:\docker\elk\spring-app\target\classes started by anhtu in D:\docker\elk\spring-app)
+[2021-11-17 01:29:22.981] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStartupProfileInfo:663 - The following profiles are active: docker
+[2021-11-17 01:29:23.730] [TuanDesktop] [main] INFO o.s.b.w.e.tomcat.TomcatWebServer@initialize:108 - Tomcat initialized with port(s): 8081 (http)
+[2021-11-17 01:29:23.748] [TuanDesktop] [main] INFO o.a.catalina.core.StandardService@log:173 - Starting service [Tomcat]
+[2021-11-17 01:29:23.748] [TuanDesktop] [main] INFO o.a.catalina.core.StandardEngine@log:173 - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2021-11-17 01:29:23.808] [TuanDesktop] [main] INFO o.a.c.c.C.[Tomcat].[localhost].[/]@log:173 - Initializing Spring embedded WebApplicationContext
+[2021-11-17 01:29:23.820] [TuanDesktop] [main] INFO o.s.b.w.s.c.ServletWebServerApplicationContext@prepareWebApplicationContext:290 - Root WebApplicationContext: initialization completed in 794 ms
+[2021-11-17 01:29:24.126] [TuanDesktop] [main] INFO o.s.b.w.e.tomcat.TomcatWebServer@start:220 - Tomcat started on port(s): 8081 (http) with context path ''
+[2021-11-17 01:29:24.139] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStarted:61 - Started SpringAppApplication in 1.529 seconds (JVM running for 2.661)
+[2021-11-17 01:29:48.408] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStarting:55 - Starting SpringAppApplication using Java 1.8.0_144 on TuanDesktop with PID 1476 (D:\docker\elk\spring-app\target\classes started by anhtu in D:\docker\elk\spring-app)
+[2021-11-17 01:29:48.426] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStartupProfileInfo:663 - The following profiles are active: docker
+[2021-11-17 01:29:49.229] [TuanDesktop] [main] INFO o.s.b.w.e.tomcat.TomcatWebServer@initialize:108 - Tomcat initialized with port(s): 8081 (http)
+[2021-11-17 01:29:49.246] [TuanDesktop] [main] INFO o.a.catalina.core.StandardService@log:173 - Starting service [Tomcat]
+[2021-11-17 01:29:49.246] [TuanDesktop] [main] INFO o.a.catalina.core.StandardEngine@log:173 - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2021-11-17 01:29:49.307] [TuanDesktop] [main] INFO o.a.c.c.C.[Tomcat].[localhost].[/]@?:? - Initializing Spring embedded WebApplicationContext
+[2021-11-17 01:29:49.320] [TuanDesktop] [main] INFO o.s.b.w.s.c.ServletWebServerApplicationContext@?:? - Root WebApplicationContext: initialization completed in 850 ms
+[2021-11-17 01:29:49.662] [TuanDesktop] [main] INFO o.s.b.w.e.tomcat.TomcatWebServer@start:220 - Tomcat started on port(s): 8081 (http) with context path ''
+[2021-11-17 01:29:49.688] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStarted:61 - Started SpringAppApplication in 1.595 seconds (JVM running for 2.685)
+[2021-11-17 01:31:42.771] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStarting:55 - Starting SpringAppApplication using Java 1.8.0_144 on TuanDesktop with PID 10280 (D:\docker\elk\spring-app\target\classes started by anhtu in D:\docker\elk\spring-app)
+[2021-11-17 01:31:42.782] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStartupProfileInfo:663 - The following profiles are active: docker
+[2021-11-17 01:31:43.561] [TuanDesktop] [main] INFO o.s.b.w.e.tomcat.TomcatWebServer@initialize:108 - Tomcat initialized with port(s): 8081 (http)
+[2021-11-17 01:31:43.570] [TuanDesktop] [main] INFO o.a.catalina.core.StandardService@log:173 - Starting service [Tomcat]
+[2021-11-17 01:31:43.571] [TuanDesktop] [main] INFO o.a.catalina.core.StandardEngine@log:173 - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2021-11-17 01:31:43.639] [TuanDesktop] [main] INFO o.a.c.c.C.[Tomcat].[localhost].[/]@log:173 - Initializing Spring embedded WebApplicationContext
+[2021-11-17 01:31:43.648] [TuanDesktop] [main] INFO o.s.b.w.s.c.ServletWebServerApplicationContext@prepareWebApplicationContext:290 - Root WebApplicationContext: initialization completed in 830 ms
+[2021-11-17 01:31:43.974] [TuanDesktop] [main] INFO o.s.b.w.e.tomcat.TomcatWebServer@start:220 - Tomcat started on port(s): 8081 (http) with context path ''
+[2021-11-17 01:31:43.992] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStarted:61 - Started SpringAppApplication in 1.565 seconds (JVM running for 2.678)
+[2021-11-17 01:33:13.368] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStarting:55 - Starting SpringAppApplication using Java 1.8.0_144 on TuanDesktop with PID 8640 (D:\docker\elk\spring-app\target\classes started by anhtu in D:\docker\elk\spring-app)
+[2021-11-17 01:33:13.384] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStartupProfileInfo:663 - The following profiles are active: docker
+[2021-11-17 01:33:14.149] [TuanDesktop] [main] INFO o.s.b.w.e.tomcat.TomcatWebServer@initialize:108 - Tomcat initialized with port(s): 8081 (http)
+[2021-11-17 01:33:14.167] [TuanDesktop] [main] INFO o.a.catalina.core.StandardService@log:173 - Starting service [Tomcat]
+[2021-11-17 01:33:14.168] [TuanDesktop] [main] INFO o.a.catalina.core.StandardEngine@log:173 - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2021-11-17 01:33:14.227] [TuanDesktop] [main] INFO o.a.c.c.C.[Tomcat].[localhost].[/]@?:? - Initializing Spring embedded WebApplicationContext
+[2021-11-17 01:33:14.242] [TuanDesktop] [main] INFO o.s.b.w.s.c.ServletWebServerApplicationContext@?:? - Root WebApplicationContext: initialization completed in 811 ms
+[2021-11-17 01:33:14.554] [TuanDesktop] [main] INFO o.s.b.w.e.tomcat.TomcatWebServer@start:220 - Tomcat started on port(s): 8081 (http) with context path ''
+[2021-11-17 01:33:14.564] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStarted:61 - Started SpringAppApplication in 1.542 seconds (JVM running for 2.688)

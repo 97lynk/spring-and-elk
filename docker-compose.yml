@@ -1,0 +1,52 @@
+version: '3.3'
+
+services:
+
+  elasticsearch:
+    image: elasticsearch:7.14.2
+#    logging:
+#      driver: none
+    volumes:
+      - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
+      - ./elasticsearch/data:/usr/share/elasticsearch/data
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    environment:
+      ES_JAVA_OPTS: "-Xmx256m -Xms256m"
+      ELASTIC_PASSWORD: changeme
+    networks:
+      - elk_lan
+
+  logstash:
+    image: logstash:7.14.2
+    volumes:
+      - ./logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml
+      - ./logstash/config/pipelines.yml:/usr/share/logstash/config/pipelines.yml
+      - ./logstash/pipeline:/usr/share/logstash/pipeline
+      - ./logs:/usr/share/logstash/logs
+    ports:
+      - "9999:9999"
+      - "8888:8888/udp"
+    environment:
+      LS_JAVA_OPTS: "-Xmx256m -Xms256m"
+    # command: logstash -f /logstash.config
+    networks:
+      - elk_lan
+    depends_on:
+      - elasticsearch
+
+  kibana:
+    image: kibana:7.14.2
+    volumes:
+      - ./kibana/config/kibana.yml:/usr/share/kibana/config/kibana.yml
+    ports:
+      - "5601:5601"
+    networks:
+      - elk_lan
+    depends_on:
+      - elasticsearch
+
+networks:
+  elk_lan:
+    driver: bridge

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<!-- https://github.com/spring-projects/spring-boot/blob/main/spring-boot-project/spring-boot/src/main/resources/org/springframework/boot/logging/logback/file-appender.xml -->
+	<include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+	<property name="FILE_LOG_TO_READ_PATTERN" value="[%d{yyyy-MM-dd HH:mm:ss.SSS}] [${HOSTNAME}] [%thread] %level %logger{36}@%method:%line - %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}}"/>
+	<property name="SYSLOG_PATTERN" value="[%d{yyyy-MM-dd HH:mm:ss.SSS}] [${HOSTNAME}] [%thread] %level %logger{36}@%method:%line - %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}}"/>
+
+	<property scope="context" name="log.fileExtension" value="log"/>
+	<property scope="context" name="log.directory" value="../logs"/>
+	<property scope="context" name="log.fileName" value="stream-file"/>
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>${CONSOLE_LOG_PATTERN}</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<encoder>
+			<pattern>${FILE_LOG_TO_READ_PATTERN}</pattern>
+		</encoder>
+		<rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+			<fileNamePattern>${log.directory}/${log.fileName}.%d{yyyy-MM-dd}.%i.${log.fileExtension}</fileNamePattern>
+			<maxFileSize>5MB</maxFileSize>
+			<maxHistory>2</maxHistory>
+		</rollingPolicy>
+	</appender>
+
+	<appender name="SOCKET" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
+		<destination>localhost:9999</destination>
+		<encoder class="net.logstash.logback.encoder.LogstashEncoder">
+		</encoder>
+		<includeCallerData>true</includeCallerData>
+		<keepAliveDuration>5 minutes</keepAliveDuration>
+	</appender>
+
+	<appender name="SYSLOG" class="ch.qos.logback.classic.net.SyslogAppender">
+		<syslogHost>localhost</syslogHost>
+		<port>8888</port>
+		<facility>LOCAL0</facility>
+		<throwableExcluded>true</throwableExcluded>
+		<suffixPattern>${SYSLOG_PATTERN}</suffixPattern>
+	</appender>
+
+	<root level="INFO">
+		<appender-ref ref="STDOUT"/>
+		<appender-ref ref="SOCKET"/>
+		<appender-ref ref="SYSLOG"/>
+		<appender-ref ref="FILE"/>
+	</root>
+</configuration>

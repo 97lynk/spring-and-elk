@@ -1,0 +1,48 @@
+[2021-12-04 12:25:56.311] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStarting:55 - Starting SpringAppApplication using Java 1.8.0_144 on TuanDesktop with PID 24508 (D:\docker\elk\spring-app\target\classes started by anhtu in D:\docker\elk\spring-app)
+[2021-12-04 12:25:56.316] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStartupProfileInfo:659 - No active profile set, falling back to default profiles: default
+[2021-12-04 12:25:57.570] [TuanDesktop] [main] INFO o.s.b.w.e.tomcat.TomcatWebServer@initialize:108 - Tomcat initialized with port(s): 8081 (http)
+[2021-12-04 12:25:57.582] [TuanDesktop] [main] INFO o.a.catalina.core.StandardService@log:173 - Starting service [Tomcat]
+[2021-12-04 12:25:57.583] [TuanDesktop] [main] INFO o.a.catalina.core.StandardEngine@log:173 - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2021-12-04 12:25:57.659] [TuanDesktop] [main] INFO o.a.c.c.C.[Tomcat].[localhost].[/]@log:173 - Initializing Spring embedded WebApplicationContext
+[2021-12-04 12:25:57.660] [TuanDesktop] [main] INFO o.s.b.w.s.c.ServletWebServerApplicationContext@prepareWebApplicationContext:290 - Root WebApplicationContext: initialization completed in 1289 ms
+[2021-12-04 12:25:57.983] [TuanDesktop] [main] INFO o.s.b.w.e.tomcat.TomcatWebServer@start:220 - Tomcat started on port(s): 8081 (http) with context path ''
+[2021-12-04 12:25:57.996] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStarted:61 - Started SpringAppApplication in 2.075 seconds (JVM running for 2.921)
+[2021-12-04 12:27:42.872] [TuanDesktop] [http-nio-8081-exec-1] INFO o.a.c.c.C.[Tomcat].[localhost].[/]@log:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-12-04 12:27:42.873] [TuanDesktop] [http-nio-8081-exec-1] INFO o.s.web.servlet.DispatcherServlet@initServletBean:525 - Initializing Servlet 'dispatcherServlet'
+[2021-12-04 12:27:42.875] [TuanDesktop] [http-nio-8081-exec-1] INFO o.s.web.servlet.DispatcherServlet@initServletBean:547 - Completed initialization in 1 ms
+[2021-12-04 12:27:42.898] [TuanDesktop] [http-nio-8081-exec-1] INFO i.a.springapp.SpringAppApplication@home:21 - Sat Dec 04 12:27:42 ICT 2021
+[2021-12-04 12:28:02.904] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStarting:55 - Starting SpringAppApplication using Java 1.8.0_144 on TuanDesktop with PID 27928 (D:\docker\elk\spring-app\target\classes started by anhtu in D:\docker\elk\spring-app)
+[2021-12-04 12:28:02.909] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStartupProfileInfo:659 - No active profile set, falling back to default profiles: default
+[2021-12-04 12:28:03.883] [TuanDesktop] [main] INFO o.s.b.w.e.tomcat.TomcatWebServer@initialize:108 - Tomcat initialized with port(s): 8081 (http)
+[2021-12-04 12:28:03.891] [TuanDesktop] [main] INFO o.a.catalina.core.StandardService@log:173 - Starting service [Tomcat]
+[2021-12-04 12:28:03.892] [TuanDesktop] [main] INFO o.a.catalina.core.StandardEngine@log:173 - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2021-12-04 12:28:03.957] [TuanDesktop] [main] INFO o.a.c.c.C.[Tomcat].[localhost].[/]@log:173 - Initializing Spring embedded WebApplicationContext
+[2021-12-04 12:28:03.958] [TuanDesktop] [main] INFO o.s.b.w.s.c.ServletWebServerApplicationContext@prepareWebApplicationContext:290 - Root WebApplicationContext: initialization completed in 1006 ms
+[2021-12-04 12:28:04.334] [TuanDesktop] [main] INFO o.s.b.w.e.tomcat.TomcatWebServer@start:220 - Tomcat started on port(s): 8081 (http) with context path ''
+[2021-12-04 12:28:04.344] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStarted:61 - Started SpringAppApplication in 1.719 seconds (JVM running for 2.412)
+[2021-12-04 12:36:10.889] [TuanDesktop] [http-nio-8081-exec-1] INFO o.a.c.c.C.[Tomcat].[localhost].[/]@log:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-12-04 12:36:10.890] [TuanDesktop] [http-nio-8081-exec-1] INFO o.s.web.servlet.DispatcherServlet@initServletBean:525 - Initializing Servlet 'dispatcherServlet'
+[2021-12-04 12:36:10.892] [TuanDesktop] [http-nio-8081-exec-1] INFO o.s.web.servlet.DispatcherServlet@initServletBean:547 - Completed initialization in 1 ms
+[2021-12-04 12:36:10.914] [TuanDesktop] [http-nio-8081-exec-1] INFO i.a.springapp.SpringAppApplication@home:21 - Sat Dec 04 12:36:10 ICT 2021
+[2021-12-04 12:37:30.710] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStarting:55 - Starting SpringAppApplication using Java 1.8.0_144 on TuanDesktop with PID 16312 (D:\docker\elk\spring-app\target\classes started by anhtu in D:\docker\elk\spring-app)
+[2021-12-04 12:37:30.715] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStartupProfileInfo:659 - No active profile set, falling back to default profiles: default
+[2021-12-04 12:37:31.750] [TuanDesktop] [main] INFO o.s.b.w.e.tomcat.TomcatWebServer@initialize:108 - Tomcat initialized with port(s): 8080 (http)
+[2021-12-04 12:37:31.767] [TuanDesktop] [main] INFO o.a.catalina.core.StandardService@log:173 - Starting service [Tomcat]
+[2021-12-04 12:37:31.768] [TuanDesktop] [main] INFO o.a.catalina.core.StandardEngine@log:173 - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2021-12-04 12:37:31.845] [TuanDesktop] [main] INFO o.a.c.c.C.[Tomcat].[localhost].[/]@log:173 - Initializing Spring embedded WebApplicationContext
+[2021-12-04 12:37:31.846] [TuanDesktop] [main] INFO o.s.b.w.s.c.ServletWebServerApplicationContext@prepareWebApplicationContext:290 - Root WebApplicationContext: initialization completed in 1089 ms
+[2021-12-04 12:37:32.205] [TuanDesktop] [main] INFO o.s.b.w.e.tomcat.TomcatWebServer@start:220 - Tomcat started on port(s): 8080 (http) with context path ''
+[2021-12-04 12:37:32.221] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStarted:61 - Started SpringAppApplication in 1.839 seconds (JVM running for 2.427)
+[2021-12-04 12:41:04.838] [TuanDesktop] [http-nio-8080-exec-1] INFO o.a.c.c.C.[Tomcat].[localhost].[/]@log:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-12-04 12:41:04.840] [TuanDesktop] [http-nio-8080-exec-1] INFO o.s.web.servlet.DispatcherServlet@initServletBean:525 - Initializing Servlet 'dispatcherServlet'
+[2021-12-04 12:41:04.842] [TuanDesktop] [http-nio-8080-exec-1] INFO o.s.web.servlet.DispatcherServlet@initServletBean:547 - Completed initialization in 1 ms
+[2021-12-04 12:41:04.863] [TuanDesktop] [http-nio-8080-exec-1] INFO i.a.springapp.SpringAppApplication@home:21 - Sat Dec 04 12:41:04 ICT 2021
+[2021-12-04 12:49:23.896] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStarting:55 - Starting SpringAppApplication using Java 1.8.0_144 on TuanDesktop with PID 23388 (D:\docker\elk\spring-app\target\classes started by anhtu in D:\docker\elk\spring-app)
+[2021-12-04 12:49:23.901] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStartupProfileInfo:659 - No active profile set, falling back to default profiles: default
+[2021-12-04 12:49:25.042] [TuanDesktop] [main] INFO o.s.b.w.e.tomcat.TomcatWebServer@initialize:108 - Tomcat initialized with port(s): 8080 (http)
+[2021-12-04 12:49:25.051] [TuanDesktop] [main] INFO o.a.catalina.core.StandardService@log:173 - Starting service [Tomcat]
+[2021-12-04 12:49:25.052] [TuanDesktop] [main] INFO o.a.catalina.core.StandardEngine@log:173 - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2021-12-04 12:49:25.122] [TuanDesktop] [main] INFO o.a.c.c.C.[Tomcat].[localhost].[/]@log:173 - Initializing Spring embedded WebApplicationContext
+[2021-12-04 12:49:25.123] [TuanDesktop] [main] INFO o.s.b.w.s.c.ServletWebServerApplicationContext@prepareWebApplicationContext:290 - Root WebApplicationContext: initialization completed in 1178 ms
+[2021-12-04 12:49:25.478] [TuanDesktop] [main] INFO o.s.b.w.e.tomcat.TomcatWebServer@start:220 - Tomcat started on port(s): 8080 (http) with context path ''
+[2021-12-04 12:49:25.494] [TuanDesktop] [main] INFO i.a.springapp.SpringAppApplication@logStarted:61 - Started SpringAppApplication in 1.873 seconds (JVM running for 2.555)

@@ -1,0 +1,10 @@
+# This file is where you define your pipelines. You can define multiple.
+# For more information on multiple pipelines, see the documentation:
+#   https://www.elastic.co/guide/en/logstash/current/multiple-pipelines.html
+
+- pipeline.id: logback-read-file
+  path.config: "/usr/share/logstash/pipeline/read-file.conf"
+- pipeline.id: logback-socket
+  path.config: "/usr/share/logstash/pipeline/socket.conf"
+- pipeline.id: logback-syslog
+  path.config: "/usr/share/logstash/pipeline/syslog.conf"
